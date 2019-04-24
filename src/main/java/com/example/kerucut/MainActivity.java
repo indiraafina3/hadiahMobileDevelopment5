@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
                 double j = Double.parseDouble(jarijari);
                 double t = Double.parseDouble(tinggi);
 
-                double volume = per*PI*j*t/3;
+                double volume = PI*j*t/3;
                 txtVolume.setText("Volume = " + volume);
             }
         });
