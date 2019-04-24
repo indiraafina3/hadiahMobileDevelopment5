@@ -9,7 +9,6 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     private static final double PI = 3.14; //menggunakan phi desimal
-    private static  final double per = 0.333; //1/3 dibulatkan ke desimal berdasarkan rumus 1/3*phi*r*r*t
     private EditText edtJarijari, edtTinggi;
     private TextView txtVolume;
     private Button btnHitung;
@@ -35,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
                 double j = Double.parseDouble(jarijari);
                 double t = Double.parseDouble(tinggi);
 
-                double volume = per*PI*j*t;
+                double volume = per*PI*j*t/3;
                 txtVolume.setText("Volume = " + volume);
             }
         });
